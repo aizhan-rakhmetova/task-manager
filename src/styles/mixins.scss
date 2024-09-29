@@ -1,0 +1,44 @@
+@import './colors.scss';
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin task-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 90%;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+@mixin task-wrapper-styles {
+  @include flex-column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid $primary-color;
+  border-radius: 12px;
+  gap: 10px;
+}
+
+@mixin task-status {
+  text-align: right;
+  font-weight: bold;
+}
+
+@mixin remove-button-styles {
+  @include flex-center;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  border-radius: 6px;
+  background-color: white;
+}

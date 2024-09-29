@@ -1,0 +1,23 @@
+@import '../../../../src/styles/colors.scss';
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+.wrapper {
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid $primary-color;
+    border-radius: 12px;
+}
+
+.title {
+    color: $title;
+    text-align: center;
+}
+
